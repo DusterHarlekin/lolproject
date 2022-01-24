@@ -1,0 +1,287 @@
+.body {
+    background-color: #070707;
+}
+
+/*nav*/
+.div {
+    height: 500px;
+}
+
+.fi {
+    font-size: 200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar {
+    border-bottom: 2px solid #CFA75B;
+}
+
+.navbar i {
+    font-size: 35px;
+}
+
+/*banner*/
+
+.vid-container {
+    height: 80vh;
+}
+
+.banner-logo {
+    z-index: 100;
+    position: relative;
+}
+
+#videobg {
+    left: -300px;
+    opacity: .6;
+    z-index: 0;
+}
+
+/*banner img*/
+
+.banner-logo {
+    width: 95%;
+}
+
+/*banner button*/
+
+.btn-gold {
+    position: relative;
+    transform: skew(-20deg);
+    border: 2px solid #CFA75B;
+    width: 180px;
+    padding: 12px 0;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.btn-gold-span {
+    display: inline-block;
+    transform: skew(20deg);
+    color: #CFA75B;
+    font-family: 'Ruluko', sans-serif;
+}
+
+/*rotation*/
+
+.img-rotation {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+    height: 60px;
+    width: 60px;
+    border: 3px solid #CFA75B;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.img-rotation img {
+    width: 100%;
+    height: 100%;
+}
+
+.champ-rotation p {
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+/*subtitulos*/
+
+.subtitle {
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    font-size: 40px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+h2:before,
+h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '';
+    background-color: #CFA75B;
+}
+
+h2:after {
+    margin-left: 25px;
+}
+
+h2:before {
+    margin-left: -55%;
+}
+
+.inside {
+    color: #CFA75B;
+    font-family: 'Ruluko', sans-serif;
+    font-size: 17px;
+}
+
+.out-normal {
+    position: relative;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    background: #CFA75B;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%, 0 60%);
+    border-radius: 6px;
+}
+
+.out-normal .inside {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #070707;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%, 0 60%);
+    padding-top: 3%;
+    border-radius: 6px;
+
+}
+
+.out-nuevos {
+    position: relative;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    background: #CFA75B;
+    clip-path: polygon(100% 0, 100% 60%, 91% 100%, 0 100%, 0 0);
+    border-radius: 6px;
+}
+
+.out-nuevos .inside {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #070707;
+    clip-path: polygon(100% 0, 100% 60%, 91% 100%, 0 100%, 0 0);
+    padding-top: 3%;
+    border-radius: 6px;
+
+}
+
+/*champions*/
+
+.champs-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.champs-card{
+    width: 37%;
+    height: 250px;
+    margin: 20px 6px;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Amumu_0.jpg");
+    background-position-x: -1.5px;
+    background-size: cover;
+    clip-path: polygon(26% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
+    position: relative;
+    overflow: hidden;
+}
+
+.champs-card:hover, .champs-card:hover > .champs-info--hover{
+    clip-path: none;
+    transform: translateY(0);
+}
+
+.champs-card:hover > .champs-name__out{
+    transform: translateY(100%);
+}
+
+.champs-name__out{
+    background-color: #CFA75B;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    clip-path: polygon(87% 0, 100% 58%, 100% 100%, 0 100%, 0 0);
+    transition: transform .05s;
+}
+
+.champs-info--hover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 14, 14, 0.75);
+    position: absolute;
+    transform: translateY(100%);
+    border: 4px solid #cfa65b9d;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+.champs-name--hover{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    text-align: center;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.champs-name{
+    color: whitesmoke;
+    position: absolute;
+    clip-path: polygon(87% 0, 100% 65%, 100% 100%, 0 100%, 0 0);
+    background-color: #070707; 
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    padding-left: 8%;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+/* footer */
+
+.img-poro{
+    height: 280px;
+}
+
+footer{
+    border-top: solid 1px #CFA75B;
+    width: 100%;
+    height: 100px;
+}
+
+footer img{
+    width: 35%;
+}
+
+footer p{
+    color: white;
+    width: 45%;
+    height: 50%;
+    font-size: 18px;
+    font-family: 'Ruluko', sans-serif;
+}
